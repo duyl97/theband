@@ -7,17 +7,74 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.clear {
-    clear: both;
+    scroll-behavior: smooth;
 }
 
 .text-white {
     color: #fff !important;
 }
 
+.text-center {
+    text-align: center !important;
+}
+
+.pull-right {
+    float: right;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 21px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col2 {
+    width: 50%;
+}
+.col3 {
+    width: calc(100%/3);
+}
+
 #header {    
+    position: fixed;
     position: fixed;
     top: 0;
     left: 0;
@@ -126,7 +183,7 @@ html {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -155,13 +212,6 @@ html {
 
 #content .member-list{ 
     margin-top: 48px;
-    text-align: center;
-}
-
-#content .member-item {
-    float: left;
-    width: calc(100%/3);
-    text-align: center;
 }
 
 #content .member-name {
@@ -212,14 +262,7 @@ html {
 }
 
 .place-list {
-    margin: 32px -8px 0;
-    padding-bottom: 48px;
-}
-
-.place-item {
-    float: left;
-    width: calc(100%/3);
-    padding: 0 8px;
+    margin-top: 32px;
 }
 
 .place-img {
@@ -250,20 +293,6 @@ html {
 .place-desc {
     margin-top: 15px;
     line-height: 1.4;
-}
-
-.place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 21px;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
 }
 
 .modal {
@@ -354,13 +383,66 @@ html {
 
 }
 
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info i {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
 .modal-footer {
     padding: 16px;
     text-align: right;
 }
 
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.map-section img{
+    width: 100%;
+}
 .modal-footer a {
     color: aqua;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: #757575;
+    text-decoration: none;
+}
+
+#footer .copyright {
+    margin-top: 15px;
+}
+
+#footer .copyright a{
+    color: #757575;
+}
+#footer .social-list a:hover,
+#footer .copyright a:hover {
+    opacity: .7;
 }
 
 @keyframes modalFadeIn {
