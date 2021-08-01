@@ -10,10 +10,17 @@
 
 /* Mobile */
 @media (max-width: 739px) {
-    .s-col-ful {
-        width: 100%;
+    .s-full-width {
+        width: 100% !important;
     }
-    
+
+    .s-col-ful {
+        width: 100% !important;
+    }
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+
     #header {    
         overflow: hidden;
     }
@@ -54,5 +61,9 @@
 
     #content .member-img {
         width: 60%;
+    }
+
+    .contact-form {
+        margin-top: 16px;
     }
 }
