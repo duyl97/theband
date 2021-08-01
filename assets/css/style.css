@@ -201,6 +201,7 @@ html {
 #slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content .content-section {
@@ -422,6 +423,14 @@ html {
     display: inline-block;
 }
 
+.contact-info a {
+    color: rgb(0, 47, 255);
+    opacity: .8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
 .contact-form {
     font-size: 15px;
 }
