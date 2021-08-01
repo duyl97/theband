@@ -82,6 +82,7 @@ html {
     height: 46px;
     z-index: 1;
     background-color: #000;
+    overflow: hidden;
 }
 
 #nav {
@@ -139,6 +140,7 @@ html {
     font-size: 14px;
 }
 
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
@@ -149,6 +151,15 @@ html {
     background-color: red;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     line-height: 46px;
