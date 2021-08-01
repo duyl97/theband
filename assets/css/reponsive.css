@@ -10,6 +10,10 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+    .s-col-ful {
+        width: 100%;
+    }
+    
     #header {    
         overflow: hidden;
     }
@@ -46,5 +50,9 @@
     #nav .subnav a {
         color: white;
         padding: 5px 40px;
+    }
+
+    #content .member-img {
+        width: 60%;
     }
 }
